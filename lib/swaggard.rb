@@ -27,7 +27,8 @@ module Swaggard
       ::YARD::Tags::Library.define_tag('Form parameter',  :form_parameter)
       ::YARD::Tags::Library.define_tag('Body parameter',  :body_parameter)
       ::YARD::Tags::Library.define_tag('Parameter list',  :parameter_list)
-      ::YARD::Tags::Library.define_tag('Response class',  :response_class)
+      ::YARD::Tags::Library.define_tag('Response class',  :response_succes)
+      ::YARD::Tags::Library.define_tag('Response class',  :response_error)
     end
 
     def get_doc(host)
