@@ -36,8 +36,10 @@ module Swaggard
             body_parameter.add_property(value)
           when 'parameter_list'
             @parameters << Parameters::List.new(value)
-          when 'response_class'
+          when 'response_succes'
             @responses << Response.new(200, value)
+          when 'response_error'
+            @responses << Response.new(400, value)
           end
         end
 

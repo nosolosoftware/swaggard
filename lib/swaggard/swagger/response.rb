@@ -13,7 +13,7 @@ module Swaggard
 
       def to_doc
         {
-          'description' => '',
+          'description' => 'hola',
           'schema'      => response_model
         }
       end
